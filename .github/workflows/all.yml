@@ -407,8 +407,8 @@ jobs:
       #     name: binaries-windows
       #     path: dist
       # WIP Instead of building
-      - name: Download binaries
-        run: ./packaging/bin/bintray-dl.sh "$PWD/dist"
+      # - name: Download binaries
+      #   run: ./packaging/bin/bintray-dl.sh "$PWD/dist"
       - name: Setup docker-compose environment
         run: |
           cat > packaging/.env <<EOF
